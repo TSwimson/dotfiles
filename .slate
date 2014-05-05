@@ -1,0 +1,25 @@
+config defaultToCurrentScreen true
+# Shows app icons and background apps, spreads icons in the same place.
+config windowHintsShowIcons true
+config windowHintsIgnoreHiddenWindows false
+config windowHintsSpread true
+config windowHintsTopLeftY 0
+alias browser 'Google Chrome'
+alias editor 'Sublime Text'
+
+# ======================================
+# The HYPER key
+# ======================================
+ 
+alias hyper ctrl;shift;alt;cmd
+
+bind space:${hyper} hint ASDFGHJKLQWERTYUIOPCVBN # use whatever keys you want
+
+# App bindings
+bind c:${hyper} focus ${browser}
+bind e:${hyper} focus ${editor}
+bind x:${hyper} focus 'Xcode'
+bind d:${hyper} focus 'iTerm'
+bind f:${hyper} focus 'HipChat'
+bind w:${hyper} focus 'Wunderlist'
+bind o:${hyper} focus 'Path Finder'
